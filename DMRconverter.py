@@ -28,6 +28,7 @@ def ip_to_id (_ip):
 print "DMR Radio ID to IP Address and Radio ID to IP Address Converter"
 print "  enter a radio ID or IP address to convert, or a"
 print "  the enter/return key to quit"
+print ""
 
 while True:
     input = raw_input("Radio ID or IP Address to Convert? ")
