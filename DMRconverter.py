@@ -25,8 +25,9 @@ def ip_to_id (_ip):
     _id = int(''.join(["%02X" % long(octet) for octet in _id]), 16)
     return _id
 
-print "DMR IP to ID and ID to IP Converter"
-print ""
+print "DMR Radio ID to IP Address and Radio ID to IP Address Converter"
+print "  enter a radio ID or IP address to convert, or a"
+print "  the enter/return key to quit"
 
 while True:
     input = raw_input("Radio ID or IP Address to Convert? ")
