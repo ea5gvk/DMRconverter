@@ -40,7 +40,7 @@ while True:
         print ""
         print "Radio ID is:", id 
         print ""
-    elif (int(input) < 16777216):
+    elif (int(input) < 16776416):
         ip = id_to_ip(int(input))
         radio_ip = '12.' + ip
         pc_ip = '13.' + ip
