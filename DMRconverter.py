@@ -51,6 +51,7 @@ def convert(_item):
             print "Not a valid radio ID or IP address:  ", _item
             print ""
 
+<<<<<<< HEAD
 print ""
 
 if len(sys.argv) > 1:
@@ -62,6 +63,24 @@ else:
     print ""
     while True:
         item = raw_input("Radio ID or IP Address to Convert? ").split(' ')
+=======
+    if '.' in input:
+        id = ip_to_id(input)
+        print ""
+        print "Radio ID is:", id 
+        print ""
+    elif (int(input) < 16776416):
+        ip = id_to_ip(int(input))
+        radio_ip = '12.' + ip
+        pc_ip = '13.' + ip
+        print ""
+        print "Radio IP adddress:       ", radio_ip
+        print "Attached PC IP address:  ", pc_ip
+        print ""
+    else:
+        print ""
+        print "Something went wrong..."
+>>>>>>> FETCH_HEAD
         print ""
         if not item:
             sys.exit()
