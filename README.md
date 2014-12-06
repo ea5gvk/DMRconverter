@@ -1,4 +1,4 @@
-*VERSION V.1a *
+***VERSION V.1a*** 
 
 
 ##PROJECT: DMRconverter
