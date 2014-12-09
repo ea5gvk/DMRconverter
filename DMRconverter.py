@@ -54,8 +54,15 @@ def convert(_item):
 print ""
 
 if len(sys.argv) > 1:
-    for item in sys.argv[1:]:
-        convert(item)
+    if sys.argv[1] == '-h' or sys.argv[1] == '--help':
+        print "usage: DMRconverter.py [radio id | ip address | (nothing)]..."
+        print ""
+        print "     (nothing) results in an interactive seesion"
+        print "     CAI network ID is assumed to be 12"
+        print ""
+    else:
+        for item in sys.argv[1:]:
+            convert(item)
 else:
     print "  enter a radio ID or IP address to convert, or a"
     print "  the enter/return key to quit"
